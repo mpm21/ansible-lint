@@ -26,6 +26,7 @@ jobs:
         targets: "test.yaml"
         # [optional]
         # Arguments to be passed to the ansible-lint
+        fail_on_error: false
 
         # Options:
         #   -q                    quieter, although not silent output
