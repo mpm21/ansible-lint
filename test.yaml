@@ -4,8 +4,9 @@
   gather_facts: no
   tasks:
     - name: Run the specified shell command
-      shell: 'ls -lrth'
+      command: 'ls -lrth'
       register: result
+      changed_when: False
 
     - name: Display the outcome
       debug:
